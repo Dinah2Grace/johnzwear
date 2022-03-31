@@ -1,4 +1,5 @@
 import React from 'react';
+import {faShoppingBag, faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faTiktok, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
@@ -38,14 +39,15 @@ function Navbar() {
                 <Link href='/'>Home</Link>
             </li>
             <li>
-                <Link href='/women'>Women</Link>
+                <Link href='/clothing'>Clothing</Link>
             </li>
             <li>
-                <Link href='/men'>Men</Link>
+                <Link href='/aboutus'>About Us</Link>
             </li>
             <li>
-                <Link href='/about'>About Us</Link>
+                <Link href='/contact-us'><FontAwesomeIcon icon={faShoppingBag}/></Link>
             </li>
+            
         </ul>
     </div>
   )

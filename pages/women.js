@@ -1,11 +1,16 @@
 import React from 'react'
+import CardWarpper from '../components/cardwarpper'
+import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 
 function Women() {
   return (
     <div>
       <Navbar/>
-      <h1>Women</h1>
+      <CardWarpper/>
+      <CardWarpper/>
+      <CardWarpper/>
+      <Footer/>
     </div>
   )
 }
