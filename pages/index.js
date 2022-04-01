@@ -20,7 +20,17 @@ export default function Home() {
     <div >
       
       <Navbar/>
-      <Header/>
+      <div className='head'>
+          <div className='head-section'>
+            <span>Johnz Wear</span>
+            <h1>
+              All Your Styles Are Here.
+            </h1>
+            <Link href='/products'>
+              Shop
+            </Link>
+          </div>
+      </div>
       <div className='best-sellers-section'>
           <h4>
             Best Sellers
