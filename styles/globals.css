@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
-  /* font-weight: lighter; */
+ 
 }
 
 .navbar{
@@ -55,10 +55,7 @@ body {
 .links-list li a{
   text-decoration: none;
   color: #000;
-  position: relative;
-  padding: 10px 10px;
-  /* text-align: center; */
-  /* font-weight: lighter; */
+ 
   
 }
 
@@ -126,16 +123,24 @@ body {
   padding: 20px 100px;
 }
 .card{
+  width: 280px;
+  height: 450px;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 1px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 5px;
+  border: 1px solid #ccc;
   /* transition: 1s ease; */
 }
 
 .card:hover{
-  border: 1px solid #ccc;
+
+}
+.card__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card__wrapper{
   display: flex;
@@ -149,28 +154,47 @@ body {
   padding: 10px;
 }
 .card__title{
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  text-align: center;
-  
+  text-align: start;
 }
 .card__title span{
   padding: 5px 0px;
   font-size: 14px;
 }
-.card__title button{
-  width: 80%;
-  padding: 5px 10px;
+.card_title_name{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.card_title_name span:nth-child(2){
+  border-bottom: 1px solid #000;
+  /* padding: 0px; */
+}
+.card__title .card__btn{
+  width: 120px;
+  padding: 10px 10px;
   outline: none;
   cursor: pointer;
   color: #fff;
-  border-radius: 1px;
+  border-radius: 5px;
   border: 1px solid #000;
   background-color: #000;
   font-size: 14px;
-  margin: 0px auto;
+  /* margin: 0px auto; */
   
+}
+.products__container{
+  margin: 30px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product_row{
+  display: flex;
+  margin: 20px 0px;
 }
 .nav__links{
   margin:100px 5%;
@@ -349,4 +373,42 @@ body {
 }
 .mini__nav{
   padding:  20px 5%;
+}
+
+
+.fancy-title, h1.fancy-title, h2.fancy-title, h3.fancy-title, h4.fancy-title, h5.fancy-title, h6.fancy-title {
+  color: #b9a16b;
+}
+
+.jh-about-page{
+  display: flex;
+  padding: 50px 50px;
+}
+
+.counter-container {
+  flex-direction: row;
+  text-align: left;
+  color: #282828;
+}
+
+.product-name{
+  background-color: #000;
+  background-image: url('../images/capcover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-origin: content-box;
+  height: 500px;
+  /* position: relative; */
+
+}
+.product-name h5{
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  font-size: 64px;
+  color: white;
+  /* right: 50%; */
 }
