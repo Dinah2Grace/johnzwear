@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import aboutpic from '../images/face.jpeg'
 
@@ -31,6 +32,8 @@ function About() {
        
           </div>
       </div>
+
+      <Footer/>
       
     </div>
 

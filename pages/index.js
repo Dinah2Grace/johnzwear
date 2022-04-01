@@ -9,8 +9,11 @@ import caps from '../images/caps.jpg';
 import Tshirt from '../images/tshirts.jpg';
 import hoodies from '../images/hoodie.jpg';
 import Trouser from '../images/trouser.jpg';
+import Hoodie from '../images/hoodk.jpg';
 import Link from 'next/link';
 import Image from 'next/image';
+import Product from '../components/product';
+import capb from '../images/shhirt.jpg';
 
 export default function Home() {
   return (
@@ -19,10 +22,19 @@ export default function Home() {
       <Navbar/>
       <Header/>
       <div className='best-sellers-section'>
+          <h4>
+            Best Sellers
+          </h4>
           <div className='best-sellers-products'>
-            <div className='product'>
-              
-            </div>
+            <Product images={capb}/>
+            <Product images={Hoodie}/>
+            <Product images={Hoodie}/>
+            <Product images={Hoodie}/>
+          </div>
+          <div className='best-seller-view-all'>
+            <Link href='/products'>
+                View All
+            </Link>
           </div>
       </div>
       <div className='cartegories-section'>

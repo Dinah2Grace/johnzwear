@@ -40,7 +40,7 @@ function Navbar() {
                 <Link href='/'>Home</Link>
             </li>
             <li>
-                <Link href='/clothing'>Clothing</Link>
+                <Link href='/products'>Clothing</Link>
                 <div>
                     <ul>
                         <li></li>
@@ -48,7 +48,7 @@ function Navbar() {
                 </div>
             </li>
             <li>
-                <Link href='/aboutus'>About Us</Link>
+                <Link href='/about'>About Us</Link>
             </li>
             <li>
                 <Link href='/contact-us'><FontAwesomeIcon icon={faShoppingBag}/></Link>
