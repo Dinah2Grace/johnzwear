@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
-  font-weight: lighter;
+  /* font-weight: lighter; */
 }
 
 .navbar{
@@ -23,6 +23,7 @@ body {
 
 .navbar ul{
   display: flex;
+  justify-content: space-between;
 }
 .links-list li, .social-links li{
   padding: 0px 10px;
@@ -33,24 +34,31 @@ body {
 .social-links li a{
   color: #000;
 
+
 }
 .links-list li{
   position: relative;
+  /* background-color: #000; */
+  margin: 0px 10px;
 }
 .links-list li::after{
   content: '';
   display: block;
   margin: auto;
   height: 2px;
+  width: 0;
+}
+.links-list li:hover::after{
   width: 100%;
   background: black;
-
 }
-.links-list li
 .links-list li a{
   text-decoration: none;
   color: #000;
-  font-weight: lighter;
+  position: relative;
+  padding: 10px 10px;
+  /* text-align: center; */
+  /* font-weight: lighter; */
   
 }
 
@@ -59,6 +67,46 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0px 5%;
+}
+
+.product{
+  height: 450px;
+  width: 280px;
+  background-color: #000;
+}
+
+.cartegories-section{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 5%;
+}
+.cartegory-row{
+  display: flex;
+}
+
+.cart{
+  position: relative;
+  margin: 20px;
+}
+.cart-actions{
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+
+}
+.cart-actions span{
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.cart-actions a{
+  background-color: black;
+  padding: 10px 50px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .card__wrapper{

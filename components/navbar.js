@@ -4,6 +4,7 @@ import { faTwitter, faTiktok, faFacebook, faInstagram } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
+
 function Navbar() {
   return (
     <div className='navbar'>
@@ -40,6 +41,11 @@ function Navbar() {
             </li>
             <li>
                 <Link href='/clothing'>Clothing</Link>
+                <div>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <Link href='/aboutus'>About Us</Link>
