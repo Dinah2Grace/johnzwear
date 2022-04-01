@@ -2,6 +2,8 @@ import React from 'react'
 import { faTwitter, faTiktok, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import footerpic from '../images/payments.png'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -35,33 +37,38 @@ function Footer() {
                    </li>
                </ul>
             
-   
+            <div>
                 <ul className='social__links'>
-                <li>
-                    <a href='#' target="_blank">
-                        <FontAwesomeIcon icon={faTwitter} className='social-icon'/>
-                    </a>
-                </li>
-                <li>
-                    <a href='#' target="_blank">
-                        <FontAwesomeIcon icon={faTiktok} className='social-icon'/>
-                    </a>
-                </li>
-                <li>
-                    <a href='#' target="_blank">
-                        <FontAwesomeIcon icon={faFacebook} className='social-icon'/>
-                    </a>
-                </li>
-                <li>
-                    <a href='#' target="_blank">
-                        <FontAwesomeIcon icon={faInstagram} className='social-icon'/>
-                    </a>
-                </li>
-            </ul>
-            
+                    <li>
+                        <a href='#' target="_blank">
+                            <FontAwesomeIcon icon={faTwitter} className='social-icon'/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#' target="_blank">
+                            <FontAwesomeIcon icon={faTiktok} className='social-icon'/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#' target="_blank">
+                            <FontAwesomeIcon icon={faFacebook} className='social-icon'/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#' target="_blank">
+                            <FontAwesomeIcon icon={faInstagram} className='social-icon'/>
+                        </a>
+                    </li>
+                    <li>
+
+                    </li>
+               </ul>
+
+                <Image width="300" height="50" src={footerpic}/>
+            </div>
         </div>
         <div>
-            JohnzWear 2022
+            JohnzWear &copy;2022
         </div>
     </div>
   )
