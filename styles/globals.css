@@ -229,12 +229,13 @@ body {
   border-bottom: 1px solid #000;
   /* padding: 0px; */
 }
-.card__title .card__btn{
+.card__title a{
   width: 120px;
   padding: 10px 10px;
   outline: none;
   cursor: pointer;
   color: #fff;
+  text-decoration: none;
   border-radius: 5px;
   border: 1px solid #000;
   background-color: #000;
@@ -253,11 +254,13 @@ body {
   margin: 20px 0px;
 }
 .nav__links{
-  margin:100px 5%;
+  margin:30px 5%;
 }
 .product__container{
-  margin: 100px 5%;
+  margin: 10px 5%;
+  padding: 50px 20px;
   display: flex;
+  background-color: #fff;
   /* justify-content: center;
   align-items: center; */
 }
@@ -274,24 +277,27 @@ body {
 }
 .active__image_section{
   border: 1px solid #ccc;
+  border-radius: ;
   padding: 10px;
 }
 .product__container .section-2{
   /* font-size: 18px; */
-  font-weight: lighter;
+  /* font-weight: lighter; */
   padding: 0px 50px;
 }
 .product__container .section-2 h3{
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
+  margin: 0px 0px;
 }
 .product__container .section-2 .product__price{
   font-size: 18px;
-  
-  padding: 20px 0px;
+  font-weight: bold;
+  padding: 5px 0px;
+  margin: 10px 0px;
 }
 .product__container .section-2 .select__product__size{
-  margin: 50px 0px;
+  margin: 10px 0px;
 }
 .product__container .section-2 .select__product__size .select__product__size_title{
   
@@ -306,6 +312,7 @@ body {
   border: 1px solid;
   margin-right: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 .product__container .section-2 .select__product__size .product__size span:hover{
   background-color: #ccc;
@@ -330,12 +337,13 @@ body {
   width: 60px;
   padding: 10px 0px;
   padding-left: 5px;
-  font-size: 18px;
+  font-size: 14px;
   outline: none;
-  border-radius: 1px;
+  border-radius: 5px;
+
 }
 .add__to__cart__section .select__qty .input{
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 .add__to__cart_btn{
   display: flex;
@@ -343,18 +351,28 @@ body {
 }
 
 .add__to__cart_btn .add__cart__btn{
+  padding: 10px 10px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #000;
+  font-size: 14px;
   width:200px;
   padding: 10px;
   font-size: 18px;
-  font-weight: lighter;
+  
+  /* font-weight: lighter; */
   /* margin-left: 20px; */
   margin: 0px 20px;
-  border-radius: 1px;
+  /* border-radius: 1px; */
   cursor: pointer;
 }
 .product__details h5{
   font-size: 24px;
   font-weight: 300;
+  margin:10px 0px;
 }
 .footer{
   border-top: 1px solid #ccc;

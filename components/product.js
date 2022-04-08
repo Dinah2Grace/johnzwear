@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 function Product(props) {
@@ -14,9 +15,9 @@ function Product(props) {
             <span>Headsock</span><span>In stock</span>
             </div>
           <span>$ 32.00 </span>
-          <button className='card__btn'>
-            Add to cart
-          </button>
+          <Link href='/product' className='card__btn'>
+            Shop
+          </Link>
         </div>
       </div>
     </div>

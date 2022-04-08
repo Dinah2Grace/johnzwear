@@ -2,6 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import tshirt from '../images/tshirt.png';
 import Link from 'next/link';
+import Tshirt from '../images/tshirts.jpg';
+import hoodies from '../images/hoodie.jpg';
+import Trouser from '../images/trouser.jpg';
+import Hoodie from '../images/hoodk.jpg';
+import Product from '../components/product';
+import capb from '../images/shhirt.jpg';
+import caps from '../images/caps.jpg';
 
 function Productview() {
   return (
@@ -9,14 +16,9 @@ function Productview() {
       <div className='nav__links'><span><Link href='/'> Home</Link> /</span><span><Link href='/'> Shirts</Link>  /</span><span>product name </span></div>
       <div className='product__container'>
         <div className='section-1'>
-          {/* <div className='images__list_section'>
-              <Image src={tshirt} width={90} height={100}/>
-              <Image src={tshirt} width={90} height={100}/>
-              <Image src={tshirt} width={90} height={100}/>
-              <Image src={tshirt} width={90} height={100}/>
-          </div> */}
+          
           <div className='active__image_section'>
-            <Image src={tshirt} width={600} height={700}/>
+            <Image src={tshirt} width={500} height={500}/>
           </div>
         </div>
         <div className='section-2'>
@@ -48,7 +50,7 @@ function Productview() {
               <div className='select__qty'>
                 <span>Select Quanty</span>
                 <div className='add__to__cart_btn'>
-                  <input type='number' className='input'/>
+                  <input type='number' value={1} className='input'/>
                   <button className='add__cart__btn'>Add to Cart</button>
                 </div>
               </div>
@@ -71,6 +73,25 @@ function Productview() {
         </div>
 
       </div>
+
+      <div className='best-sellers-section'>
+          <h4>
+            You might also like these
+          </h4>
+          <div className='best-sellers-products'>
+            <Product images={capb}/>
+            <Product images={Hoodie}/>
+            <Product images={Hoodie}/>
+            <Product images={Hoodie}/>
+          </div>
+          <div className='best-seller-view-all'>
+            <Link href='/products'>
+                View All
+            </Link>
+          </div>
+      </div>
+      
+     
     </div>
   )
 }
