@@ -7,6 +7,8 @@ import tshirt from '../images/tshirt.png'
 import Footer from '../components/footer';
 import Productview from '../components/productview';
 import Product from '../components/product';
+import { products } from '../data/products';
+
 // import capb from '../images/pexels-nathan-j-hilton-5343089.jpg'
 import capb from '../images/shhirt.jpg';
 import shirt from '../images/shirtq.jpg';
@@ -30,7 +32,7 @@ function Products() {
 
         <div className='products__container'>
             <div className='product_row'>
-                <Product images={capb}/>
+                <Product images={products.image} productName={products.name} productPrice={products.price}/>
                 <Product images={tshirt}/>
                 <Product images={hoody}/>
                 <Product images={capy}/>
