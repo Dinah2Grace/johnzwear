@@ -22,9 +22,9 @@ export default function Home() {
       <Navbar/>
       <div className='head'>
           <div className='head-section'>
-            <span>Johnz Wear</span>
+            {/* <span>Johnz Wear</span> */}
             <h1>
-              All Your Styles Are Here.
+              Find All Your Amazing Style Here.
             </h1>
             <Link href='/products'>
               Shop
